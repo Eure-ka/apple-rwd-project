@@ -1,0 +1,182 @@
+@charset "UTF-8"
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header.container > nav {
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 9999;
+    display: block;
+    margin: 0;
+    width: 100%;
+    height: 48px;
+    max-height: 44px;
+}
+
+div.sm-nav{
+    display: none;
+}
+
+header.container > nav ul.nav-list {
+    cursor: default;
+    margin: 0 -10px;
+    padding: 0 40px;
+    width: auto;
+    height: 44px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    box-sizing: content-box;
+}
+
+header.container > nav > div.big-nav > ul.nav-list > li {
+    box-sizing: border-box;
+    display: inline-block;
+    position: relative;
+    height: 44px;
+    z-index: 1;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 44px;
+}
+header.container > nav > div.sm-nav > ul.nav-list > li {
+    box-sizing: border-box;
+    display: inline-block;
+    position: relative;
+    height: 44px;
+    z-index: 1;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 44px;
+}
+
+li > a > span.list-text {
+    visibility: hidden;
+}
+
+ul.nav-list a {
+    display: inline-block;
+    padding: 0 10px;
+    height: 44px;
+}
+
+ul.nav-list span.fa {
+    display: inline-block;
+    padding: 0 10px;
+/*    height: 44px;*/
+    color: #fff;
+}
+
+ul.nav-list a.list-apple {
+    background-size: 16px 44px;
+    background-repeat: no-repeat;
+    background-image: url(../image/nav/large/nav_apple_large.svg);
+    background-position: center center;
+    width: 16px;
+}
+
+ul.nav-list a.list-mac {
+    background-size: 26px 44px;
+    background-repeat: no-repeat;
+    background-image: url(../image/nav/large/nav_mac_large.svg);
+    background-position: center center;
+    background-origin: content-box;
+    background-size: cover;
+    max-width: 44.2px;
+}
+
+ul.nav-list a.list-ipad {
+    background-size: 27px 44px;
+    background-repeat: no-repeat;
+    background-image: url(../image/nav/large/nav_ipad_large.svg);
+    background-position: center center;
+    background-origin: content-box;
+    background-size: cover;
+    max-width: 45.9px;
+}
+
+ul.nav-list a.list-iphone {
+    background-size: 44px 44px;
+    background-repeat: no-repeat;
+    background-image: url(../image/nav/large/nav_iphone_large.svg);
+    background-position: center center;
+    background-origin: content-box;
+    background-size: cover;
+    max-width: 74.8px;
+}
+
+ul.nav-list a.list-watch {
+    background-size: 40px 44px;
+    background-repeat: no-repeat;
+    background-image: url(../image/nav/large/nav_watch_large.svg);
+    background-position: center center;
+    background-origin: content-box;
+    background-size: cover;
+    max-width: 68px;
+}
+
+ul.nav-list a.list-music {
+    background-size: 37px 44px;
+    background-repeat: no-repeat;
+    background-image: url(../image/nav/large/nav_music_large.svg);
+    background-position: center center;
+    background-origin: content-box;
+    background-size: cover;
+    max-width: 62.9px;
+}
+
+ul.nav-list a.list-support {
+    background-size: 45px 44px;
+    background-repeat: no-repeat;
+    background-image: url(../image/nav/large/nav_support_large.svg);
+    background-position: center center;
+    background-origin: content-box;
+    background-size: cover;
+    max-width: 76.5px;
+}
+
+ul.nav-list a.list-search {
+    background-size: 18px 88px;
+    background-repeat: no-repeat;
+    background-image: url(../image/nav/large/nav_search_large.svg);
+    background-position: 10px 0;
+    width: 18px;
+}
+
+ul.nav-list a.list-bag {
+    background-size: 17px 44px;
+    background-repeat: no-repeat;
+    background-image: url(../image/nav/large/nav_bag_large.svg);
+    background-position: center center;
+    width: 17px;
+}
+
+@media (max-width: 767px) {
+    div.big-nav{
+        display: none;
+    }
+    div.sm-nav{
+        display: flex;
+    }
+    div.sm-nav ul {
+        justify-content: space-between;
+        flex: 1;
+    }
+    div.sm-nav ul li {
+        
+    }
+    header.container > nav > ul.nav-list {
+        display: block;
+    }
+    
+    header.container > nav > ul.nav-list > li{
+        display: block;
+    }
+    
+}
