@@ -75,7 +75,7 @@
     height: 100%;
     display: flex;
     position: relative;
-    
+    left:30px;
 }
 
 .mac img{
@@ -91,9 +91,11 @@
 }
 
 .bottommenu2{
-    width: 120%;
-    height: 120%;
+    width: 100%;
+    height: 100%;
     display: flex;
+    position: relative;
+    left:30px;
 }
 
 .applewatch img{
@@ -148,7 +150,7 @@
 
 
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
     .menu {
         display: block;
     }
@@ -157,7 +159,7 @@
         flex: 1;
     }
 
-    .explain {
+    div .explain {
         display: none;
     }
 }
