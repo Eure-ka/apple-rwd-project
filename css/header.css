@@ -153,19 +153,18 @@ ul.nav-list a.list-bag {
     width: 17px;
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
     div.big-nav{
         display: none;
     }
     div.sm-nav{
         display: flex;
+        width: 100%;
     }
-    div.sm-nav ul {
+    div.sm-nav ul{
         justify-content: space-between;
         flex: 1;
-    }
-    div.sm-nav ul li {
-        
+        width: 500px;
     }
     header.container > nav > ul.nav-list {
         display: block;
