@@ -160,9 +160,10 @@ div.menu a {
 div.menu hr {
     display: none;
 }
-div.menu em{
+div.menu i{
     display: none;
 }
+
 div.explain {
     font-size: 12px;
 }
@@ -242,20 +243,56 @@ div.explain {
         display: block;
     }
 
-    div.menu span{
-        display: inline-block;
-        padding-left: 70%;
+    div.menu i{
+        display: block;
     }
 
-    div.menu #menu_sp2{
-        padding-left: 82.5%;
+    div.menu div.moblile_mode1{
+        display: flex;
+        justify-content: space-between;
     }
 
-    div.menu #menu_sp3{
-        padding-left: 74.5%;
+    div.menu div.moblile_mode2{
+        display: flex;
+        justify-content: space-between;
     }
 
-    
+    div.menu div.moblile_mode3{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    div.menu div.moblile_mode4{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .menu_content1{
+        display: none;
+    }
+    .menu_content2{
+        display: none;
+    }
+    .menu_content3{
+        display: none;
+    }
+    .menu_content4{
+        display: none;
+    }
+
+    .menu_content1.active{
+        display: block;
+    }
+
+    .menu_content2.active{
+        display: block;
+    }
+    .menu_content3.active{
+        display: block;
+    }
+    .menu_content4.active{
+        display: block;
+    }
 
 
     div.explain{

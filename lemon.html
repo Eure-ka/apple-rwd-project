@@ -14,14 +14,19 @@
     <meta name="viewport" content="width=device-width">
 </head>
 
-<body>
+<body >
     <header class="container">
         <nav>
             <div class="sm-nav">
                 <ul class="nav-list">
-                    <li><a href="#"><span class="fa fa-bars"></span></a></li>
-                    <li><a href="#"><i class="fas fa-lemon" style="color: white;"></i></a></li>
-                    <li><a class="list-bag" href="#"><span class="list-text">Bag</span></a></li>
+                    <li >
+                        <a class="header_toggleBtn">
+                            <span class="confirm"><span class="fa fa-bars"></span></span>
+                            <span class="cancel"><span class="fas fa-times"></span></span>
+                        </a>
+                    </li>
+                    <li ><a class="header_logo"><span class="fas fa-lemon" style="color: white;"></span></a></li>
+                    <li ><a class="list-bag"></a></li>
                 </ul>
             </div>
             <div class="big-nav">
@@ -34,12 +39,23 @@
                     <li><a class="list-music" href="#"><span class="list-text">Music</span></a></li>
                     <li><a class="list-support" href="#"><span class="list-text">Support</span></a></li>
                     <li><a class="list-search" href="#"><span class="list-text">Search</span></a></li>
-                    <li><a class="list-bag" href="#"><span class="list-text">Bag</span></a></li>
+                    <li><a class="list-bag" href="#"><span class="list-text">Bag</span></a></li>   
                 </ul>
+            </div>
+            <div class="mobile_header_menu">
+                <input placeholder="         lemon을 검색하세요"/><hr>
+                    <div class="menu_formargin">
+                        <ul><a  href="#"><span class="list-text">Mac</span></a></ul><hr>
+                        <ul><a  href="#"><span class="list-text">iPad</span></a></ul><hr>
+                        <ul><a  href="#"><span class="list-text">iPhone</span></a></ul><hr>
+                        <ul><a  href="#"><span class="list-text">Watch</span></a></ul><hr>
+                        <ul><a  href="#"><span class="list-text">Music</span></a></ul><hr>
+                        <ul><a  href="#"><span class="list-text">Support</span></a></ul>
+                    </div>
             </div>
         </nav>
     </header>
-    <section>
+    <section class="sc">
         <div class="text_mobile_SE">
             <h2>iPhone SE</h2>
             <h3>이상적.그러나 합리적</h3>
@@ -98,62 +114,78 @@
             </div>
         </div>
     </section>
-    <footer>
+    <footer class="ft">
         <div class="footer">
             <div class="menu">
-                    <div class="column1">
-                        <ul>
-                            <a href="#">쇼핑및 알아보기</a><span>+</span>
-                            <hr>
+                <div class="column1">
+                    <ul>
+                        <div class='moblile_mode1'>
+                            <a href="#" style="font-weight: 800;">쇼핑및 알아보기</a><a class="menu_toggleBtn1"><i>+</i></a>
+                        </div>
+                        <hr>
+                        <ul class="menu_content1">
                             <ul><a href="#">Mac</a></ul>
                             <ul><a href="#">iPad</a></ul>
                             <ul><a href="#">iPhone</a></ul>
                             <ul><a href="#">Watch</a></ul>
                             <ul><a href="#">Airpods</a></ul>
                         </ul>
-                    </div>
-                    <div class="column2">
-                        <ul>
-                            
-                            <a href="#">서비스</a><span id="menu_sp2">+</span>
-                            <hr>
+                    </ul>
+                </div>
+                <div class="column2">
+                    <ul>
+                        <div class='moblile_mode2'>
+                            <a href="#" style="font-weight: 800;">서비스</a><a class="menu_toggleBtn2"><i>+</i></a>
+                        </div>
+                        <hr>
+                        <ul class="menu_content2">
                             <ul><a href="#">Lemon Music</a></ul>
                             <ul><a href="#">Lemon 아케이드</a></ul>
                             <ul><a href="#">Lemon Books</a></ul>
                             <ul><a href="#">iCloud</a></ul>
                         </ul>
-                    </div>
-                    <div class="column3">
-                        <ul>
-                            <a href="#">Lemon Store</a><span id="menu_sp3">+</span>
-                            <hr>
+                    </ul>
+                </div>
+                <div class="column3">
+                    <ul>
+                        <div class='moblile_mode3'>
+                            <a href="#" style="font-weight: 800;">Lemon Store</a><a class="menu_toggleBtn3"><i>+</i></a>
+                        </div>
+                        <hr>
+                        <ul class="menu_content3">
                             <ul><a href="#">매장 찾기</a></ul>
                             <ul><a href="#">온라인에서 쇼핑하기</a></ul>
                             <ul><a href="#">Genius Bar</a></ul>
                             <ul><a href="#">Today at Lemon</a></ul>
                         </ul>
-                    </div>
-                    <div class="column4">
-                        <ul>
-                            <a href="#">Lemon의 가치관</a><span>+</span>
-                            <hr>
+                    </ul>
+                </div>
+                <div class="column4">
+                    <ul>
+                        <div class='moblile_mode4'>
+                            <a href="#" style="font-weight: 800;">Lemon의 가치관</a><a class="menu_toggleBtn4"><i>+</i></a>
+                        </div>
+                        <hr>
+                        <ul class="menu_content4 ">
                             <ul><a href="#">손쉬운 사용</a></ul>
                             <ul><a href="#">환경</a></ul>
                             <ul><a href="#">협력업체에 대한 필요성</a></ul>
                             <ul><a href="#"> at Lemon</a></ul>
                         </ul>
-                    </div>
+                    </ul>
+                </div>
             </div>
             <div class="explain">
-                        <p>다양한 쇼핑 방법: <a href="#">Lemon Store</a>를 방문하거나, <a href="#">리셀러</a>를 찾아보거나, 080-330-8877번으로 전화하세요.</p>
-                        <span>Copyright © 2020 Lemon Inc. 모든 권리 보유.</span><br>
-                        <a href="#">개인정보 처리방침</a>
-                        <a href="#"> 웹 사이트 이용 약관</a>
-                        <a href="#"> 법적 고지</a>
-                        <a href="#">사이트 맵</a><br>
-                        <h6>사업자등록번호 : 120-81-84429 | 통신판매업신고번호 : 제 2011-서울강남-00810호 | 대표이사 : PETER DENWOOD | 주소 : 서울 특별시 강남구
-                            영동대로 517 | 대표전화 : 02-6712-6700 | 팩스 : 02-6928-0000</h6>
-                </div>
+                <p>다양한 쇼핑 방법: <a href="#">Lemon Store</a>를 방문하거나, <a href="#">리셀러</a>를 찾아보거나, 080-330-8877번으로 전화하세요.</p>
+                <span>Copyright © 2020 Lemon Inc. 모든 권리 보유.</span><br>
+                <a href="#">개인정보 처리방침</a>
+                <a href="#"> 웹 사이트 이용 약관</a>
+                <a href="#"> 법적 고지</a>
+                <a href="#">사이트 맵</a><br>
+                <h6>사업자등록번호 : 120-81-84429 | 통신판매업신고번호 : 제 2011-서울강남-00810호 | 대표이사 : PETER DENWOOD | 주소 : 서울 특별시 강남구
+                    영동대로 517 | 대표전화 : 02-6712-6700 | 팩스 : 02-6928-0000</h6>
+            </div>
     </footer>
 </body>
+<script src="./js/main.js"></script>
 </html>
